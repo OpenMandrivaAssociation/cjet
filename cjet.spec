@@ -1,7 +1,7 @@
 Summary:	Cjet PCL emulation for Canon CaPSL printers
 Name:		cjet
 Version:	0.8.9
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPL
 Group:		System/Printing
 URL:		ftp://metalab.unc.edu/pub/Linux/system/printing/
@@ -12,12 +12,10 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 CJET filters printer data from stdin to stdout, converting HP PCL (Printer
-Command Language) escape sequences and data structures, e.g. font headers, to
-their CaPSL equivalents. CaPSL is short for `Canon Printing Systems Language'.
+Command Language) commands to their CaPSL equivalents.
+CaPSL is short for `Canon Printing Systems Language'.
 Whereas PCL is a de-facto world-wide standard as a laser and inkjet printer
-control language (if you can call a bunch of escape sequences a `language'),
-CaPSL is limited to Canon laser printers. Newer laser printers from Canon come
-with PCL emulation, so CaPSL may well be facing extinction.
+control language, CaPSL is limited to Canon laser printers.
 
 %prep
 
