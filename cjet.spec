@@ -1,13 +1,13 @@
 Summary:	Cjet PCL emulation for Canon CaPSL printers
 Name:		cjet
 Version:	0.8.9
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPL
 Group:		System/Printing
 URL:		ftp://metalab.unc.edu/pub/Linux/system/printing/
 Source:		ftp://metalab.unc.edu/pub/Linux/system/printing/cjet089.tar.bz2
-Conflicts:	printer-utils-2006 printer-utils-2007
-Conflicts:	printer-filters-2006 printer-filters-2007
+Conflicts:	printer-utils = 2007
+Conflicts:	printer-filters = 2007
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
