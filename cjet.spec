@@ -8,7 +8,6 @@ URL:		ftp://metalab.unc.edu/pub/Linux/system/printing/
 Source:		ftp://metalab.unc.edu/pub/Linux/system/printing/cjet089.tar.bz2
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 CJET filters printer data from stdin to stdout, converting HP PCL (Printer
