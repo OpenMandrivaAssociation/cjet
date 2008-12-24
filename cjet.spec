@@ -1,14 +1,14 @@
 Summary:	Cjet PCL emulation for Canon CaPSL printers
 Name:		cjet
 Version:	0.8.9
-Release:	%mkrel 6
+Release:	%mkrel 7
 License:	GPL
 Group:		System/Printing
 URL:		ftp://metalab.unc.edu/pub/Linux/system/printing/
 Source:		ftp://metalab.unc.edu/pub/Linux/system/printing/cjet089.tar.bz2
 Conflicts:	printer-utils = 2007
 Conflicts:	printer-filters = 2007
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 CJET filters printer data from stdin to stdout, converting HP PCL (Printer
@@ -22,7 +22,7 @@ control language, CaPSL is limited to Canon laser printers.
 %setup -q -n %{name}089
 
 %build
-make OPT="%{optflags}"
+make OPT="%{optflags}" LDFLAGS="%{ldflags}"
 
 %install
 rm -rf %{buildroot}
@@ -36,4 +36,4 @@ rm -rf %{buildroot}
 %files
 %defattr(0644,root,root,0755)
 %doc README INSTALL COPYING TODO ChangeLog samples/ 
-%attr(0755,root,root)%{_bindir}/cjet
+%attr(0755,root,root) %{_bindir}/cjet
