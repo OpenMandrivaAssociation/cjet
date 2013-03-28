@@ -1,0 +1,29 @@
+diff -urN cjet089/Makefile cjet089-patched/Makefile
+--- cjet089/Makefile	1996-02-20 07:51:33.000000000 +1000
++++ cjet089-patched/Makefile	2013-03-28 19:39:13.751904900 +1100
+@@ -6,8 +6,6 @@
+ 
+ # compiler, compiler and linker options 
+ CC	  = gcc
+-OPT	  = -O2 -Wall
+-LINKOPT   = -s
+ 
+ # you should not need to change anything below
+ 
+@@ -15,15 +13,11 @@
+ 
+ EXECNAME  = cjet
+ 
+-CFLAGS	  = $(OPT)
+-LDFLAGS   = $(LINKOPT)
+-
+ OBJ = main.o parse.o function.o raster.o fonts.o misc.o symbol.o\
+       page.o pjl.o macro.o io.o
+ 
+-
+ cjet: $(OBJ)
+-	$(CC) $(LDFLAGS) -o $(EXECNAME) $(OBJ)
++	$(CC) $(CFLAGS) $(LDFLAGS) -o $(EXECNAME) $(OBJ)
+ 
+ clean:
+ 	rm -f *.o $(EXECNAME)
