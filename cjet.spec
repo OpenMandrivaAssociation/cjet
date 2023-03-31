@@ -1,7 +1,7 @@
 Summary:	PCL emulation for Canon CaPSL printers
 Name:		cjet
 Version:	0.8.9
-Release:	24
+Release:	25
 License:	GPLv2
 Group:		System/Printing
 Url:		ftp://metalab.unc.edu/pub/Linux/system/printing/
