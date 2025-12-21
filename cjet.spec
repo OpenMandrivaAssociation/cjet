@@ -8,6 +8,7 @@ Url:		ftp://metalab.unc.edu/pub/Linux/system/printing/
 Source0:	http://www.ibiblio.org/pub/Linux/system/printing/cjet089.tar.bz2
 Patch0:		cjet-0.8.9-flags.patch
 
+BuildRequires:	make
 %description
 CJET filters printer data from stdin to stdout, converting HP PCL (Printer
 Command Language) commands to their CaPSL equivalents.
